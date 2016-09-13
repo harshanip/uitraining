@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head><title>Form</title></head>
+    <style>
+        body {
+            background-color: ghostwhite;
+            color: steelblue;
+        }
+
+        h1 {
+            
+            text-align: left;
+             font-size: 20px;
+        }
+
+        p { 
+            font-family: Arial;
+            font-size: 14px;
+        } 
+        
+        input {
+            margin-left: 25px;
+        }
+        
+    </style>
+<body>
+    <form>
+        <h1>Get Quote</h1>    
+        <p> Ordered By</p> 
+        <p><input type="text" id="orderd_by"></p>
+        <p>Is this?</p>
+        <p>
+            <input type="radio" name="is_this" value="purchase" checked="true"> Purchase 
+            <input type="radio" name="is_this" value="refinance"> Refinance 
+            <input type="radio" name="is_this" value="seller"> Seller Representstion
+        </p>
+        
+        <p>Are you a?</p>
+        <p>
+            <input type="radio" name="are_u_a" value="lender" checked="true"> Lender 
+            <input type="radio" name="are_u_a" value="realtor"> Realtor 
+            <input type="radio" name="are_u_a" value="inidividial"> Individual
+            <input type="radio" name="are_u_a" value="other"> Other
+        </p>
+        
+        
+        <p>Are you the?</p>
+        <p>
+        <input type="radio" name="are_u_the" value="lender" checked="true"> Seller 
+        <input type="radio" name="are_u_the" value="realtor"> Buyer 
+        <input type="radio" name="are_u_the" value="inidividial"> Borrowe
+        <input type="radio" name="are_u_the" value="other"> Other 
+        </p>
+        
+        <p>Company (if applicable)</p> 
+        <p><input type="text" id="company"></p>
+                
+        <p>Phone number</p> 
+        <p><input type="tel" id="phone"></p>
+                
+        <p>Phone number</p> 
+        <p><input type="tel" id="phone2"></p>
+                
+        <p> Email</p> 
+        <p><input type="email" id="email"></p>
+        
+        <p>Purchase Price </p> 
+        <p><input type="text" id="purchase_price"></p>
+        
+        <p>Loan Amount </p> 
+        <p><input type="number" id="loan_amount" min="0"></p>
+        <p>Closing Date </p> 
+        <p><input type="date" id="closing_date"></p>
+        <p>Property Address</p> 
+        <p><input type="text" id="propety_address"></p>
+        <p>Special instructions</p> 
+        <p><input type="text" id="instructions"></p>
+        
+        <p><input type="submit" value="submit"></p>
+    </form>
+</body>
+</html>
